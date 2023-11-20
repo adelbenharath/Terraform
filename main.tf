@@ -34,12 +34,13 @@ variable "region" {
 provider "aws" {
   #access_key = var.aws_access_key
   #secret_key = var.aws_secret_key
-  region     = "eu-west-1"
+  region     = var.region
 }
 
 # Add .gitignore file in this directory with the terraform.tfvars
 
 resource "aws_instance" "tc_instance" {
+  count = 2
   ami           = "ami-07355fe79b493752d"
   instance_type = "t2.micro"
 
