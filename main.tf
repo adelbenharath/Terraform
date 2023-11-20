@@ -1,23 +1,23 @@
 # ## PUT TERRAFORM CLOUD BLOCK HERE!  ##
 
-# terraform {
-#     cloud {
-#     organization = "example-org-3ad3a7"
+terraform {
+    cloud {
+    organization = "example-org-3ad3a7"
 
-#     workspaces {
-#       name = "tf-cloud-test"
-#     }
-#   }
+    workspaces {
+      name = "tf-cloud-test"
+    }
+  }
 
   
   
   
-#   required_providers {
-#     aws = {
-#       source  = "hashicorp/aws"
-#       version = "~> 5.01"
-#     }
-#   }
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.01"
+    }
+  }
 
 
 
