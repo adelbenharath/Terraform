@@ -21,7 +21,7 @@ terraform {
 
 
 
-# }
+ }
 
 
 # # Variable blocks directly within the main.tf. No arguments necessary.
